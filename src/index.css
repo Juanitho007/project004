@@ -1,4 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.button {
+  @apply bg-cyan-400 rounded-full shadow-md transition-all duration-300 cursor-pointer outline-none w-12 h-12;
+}
+.button:hover {
+  @apply bg-cyan-500 shadow-lg transform -translate-y-1;
+}

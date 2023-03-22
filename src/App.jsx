@@ -47,7 +47,7 @@ const App = () => {
     loadUsers();
   }, []);
   return (
-    <div className="min-h-screen w-full bg-cover bg-center bg-gradient-to-r from-cyan-300 to-white-500 flex flex-col justify-center items-center p-10 text-white gap-10">
+    <div className="min-h-screen w-full bg-cover bg-center bg-gradient-to-r from-cyan-300 to-white flex flex-col justify-center items-center p-10 text-white gap-10">
       <Navbar btnClickVisible={handleClickVisible} />
       <UserList users={users} deleteUser={handleDelete} loadUsersForm={loadUsersForm} />
       <UserForm

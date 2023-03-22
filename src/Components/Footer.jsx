@@ -14,7 +14,7 @@ const Footer = () => {
       </marquee>
       <span>&#x276e;Hecho con </span>
       <a href="https://www.academlo.com/" target="_blank" rel="noopener noreferrer">
-        <i class="bx bx-heart-circle bx-burst"></i>
+        <i class="bx bx-heart-circle bx-burst text-3xl"></i>
       </a>
       <span> en Academlo&#x276f;_</span>
     </div>

@@ -17,10 +17,10 @@ const UserForm = ({
   return (
     <div>
       {isVisible && (
-        <div className="h-screen overflow-hidden flex flex-row justify-center items-center absolute inset-0 backdrop-blur-xl  bg-gradient-to-t from-cyan-600 to-blue-200">
+        <div className="h-screen overflow-hidden flex flex-row justify-center items-center absolute inset-0 backdrop-blur-xl  bg-gradient-to-t from-cyan-400 to-white">
           <form onSubmit={handleSubmit(myHandleSubmit)}>
-            <button onClick={handleClickVisible}>
-              <i class="bx bxs-message-square-x text-cyan-800 text-3xl"></i>
+            <button onClick={handleClickVisible} className="button">
+              <i class="bx bxs-x-square bx-spin border-0 text-4xl"></i>
             </button>
             <h2 className="text-3xl font-bold">{idUserToEdit ? 'Edit' : 'Add'} User</h2>
             <div className="flex flex-col gap-3 text-cyan-800 font-bold">
@@ -80,18 +80,18 @@ const UserForm = ({
                 />
               </div>
               <div>
-                <button className="bg-cyan-600 text-white font-semibold p-2 rounded-md">
+                <button className="button">
                   {idUserToEdit ? (
-                    <i class="bx bxs-edit-alt bx-border-circle bx-tada-hover text-xl border-2 border-white"></i>
+                    <i class="bx bxs-edit-alt bx-tada-hover border-0 text-4xl text-white"></i>
                   ) : (
-                    <i class="bx bxs-user-plus bx-border-circle bx-tada-hover text-xl border-2 border-white"></i>
+                    <i class="bx bxs-user-plus bx-tada-hover border-0 text-4xl text-white"></i>
                   )}
                 </button>
               </div>
             </div>
           </form>
         </div>
-      )}{' '}
+      )}
     </div>
   );
 };

@@ -18,11 +18,11 @@ const UserCard = ({ user, deleteUser, loadUsersForm }) => {
         {user.birthday.split('-').reverse().join(' / ')}
       </h3>
       <div className="flex flex-row justify-end gap-6">
-        <button onClick={() => loadUsersForm(user)}>
-          <i className="bx bxs-edit-alt bx-border-circle bx-tada-hover text-xl border-2 border-white"></i>
+        <button onClick={() => loadUsersForm(user)} className="button">
+          <i className="bx bxs-edit-alt bx-border-circle border-0 bx-tada-hover text-white text-3xl p-0"></i>
         </button>
-        <button onClick={() => handleDelete(user.id)}>
-          <i className="bx bxs-trash-alt bx-border-circle bx-tada-hover text-xl border-2 border-white"></i>
+        <button onClick={() => handleDelete(user.id)} className="button">
+          <i className="bx bxs-trash-alt bx-border-circle border-0 bx-tada-hover text-white text-3xl p-0"></i>
         </button>
       </div>
     </div>
