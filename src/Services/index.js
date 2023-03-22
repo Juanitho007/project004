@@ -12,8 +12,7 @@ export const getUsers = async () => {
 export const createUser = async (data) => {
   try {
     await axios.post(BASE_URL + 'users/', data);
-    console.log('Se creo existosamente el usuario');
-    toast.success('¡Usuario creado exitosamente!');
+    toast.success('User created successfully!');
   } catch (error) {
     console.error(error);
   }
@@ -22,8 +21,7 @@ export const createUser = async (data) => {
 export const updateUser = async (userId, newDataUser) => {
   try {
     await axios.put(BASE_URL + `users/${userId}/`, newDataUser);
-    console.log(`El usuario ${userId} fue actualizado exitosamente`);
-    toast.success('¡Usuario actualizado exitosamente!');
+    toast.success('User updated successfully!');
   } catch (error) {
     console.error(error);
   }
@@ -32,8 +30,7 @@ export const updateUser = async (userId, newDataUser) => {
 export const deleteUser = async (userId) => {
   try {
     await axios.delete(BASE_URL + `users/${userId}/`);
-    console.log(`El usuarios con el id <${userId}> fue eliminado`);
-    toast.success('¡Usuario eliminado exitosamente!');
+    toast.success('User deleted successfully!');
   } catch (error) {
     console.log(error);
   }
