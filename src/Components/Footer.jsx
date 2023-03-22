@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="w-full text-white text-xl text-center font-bold absolute bottom-0 bg-cyan-400">
+    <div className="w-full text-white text-xl text-center font-bold fixed bottom-0 bg-cyan-400">
       <marquee>
         <a
           href="https://juanitho007.netlify.app/"
